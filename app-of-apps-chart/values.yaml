@@ -1,5 +1,5 @@
 clusters:
-- name: minikube
+- name: kind-local
   destinationServer: https://kubernetes.default.svc
   apps:
     prometheus:
@@ -10,7 +10,7 @@ clusters:
       enabled: true
       branch: HEAD
 
-- name: gke
+- name: kind-second
   destinationServer: https://172.18.0.4:6443
   apps:
     prometheus:
